@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div id="calcDisplay">0</div>
+    <div class="keypad">
+        <button class="button-84" role="button" onclick="resetDisplay()"> C </button>
+        <button class="button-84" role="button" onclick="remofDisplay()"> < </button>
+        <button class="button-84" role="button" onclick="addToDisplay('%')"> % </button>
+        <button class="button-84" role="button" onclick="addToDisplay('/')"> / </button>
+
+        <button class="button-84" role="button" onclick="addToDisplay('7')"> 7 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('8')"> 8 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('9')"> 9 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('*')"> * </button>
+
+        <button class="button-84" role="button" onclick="addToDisplay('4')"> 4 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('5')"> 5 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('6')"> 6 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('-')"> - </button>
+
+        <button class="button-84" role="button" onclick="addToDisplay('1')"> 1 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('2')"> 2 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('3')"> 3 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('+')"> + </button>
+
+        <button class="button-84" role="button" onclick="addToDisplay('J')"> J </button>
+        <button class="button-84" role="button" onclick="addToDisplay('0')"> 0 </button>
+        <button class="button-84" role="button" onclick="addToDisplay('.')"> . </button>
+        <button class="button-84" role="button" onclick="getAnswer()"> = </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.1/math.js" 
+            integrity="sha512-iC7V/1gOwGXzYGJ9f860Jq9K/YrL+AsSI7k/03F98EkX1GEsP2VjWdHgWpwhinDTe+HGznwCnVdR2d/o2In9bA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/calculus.js"></script>
+</body>
+</html>
+
+<!--
+    seq 7%=*6 results in poop
+-->
